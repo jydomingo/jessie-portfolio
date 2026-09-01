@@ -1,0 +1,9 @@
+/* Persistent navigation and one-viewport desktop sections. */
+header{position:fixed;background:rgba(7,21,45,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(166,201,242,.14)}
+.hero,.section,.products,.contact{min-height:100svh}
+.hero{display:flex;align-items:center;padding-top:82px}
+.section{align-items:center}
+.products,.contact{display:flex;align-items:center}
+.products .shell{width:min(calc(100% - 64px),var(--max))}
+@media(max-width:850px){.hero,.section,.products,.contact{min-height:auto}.hero{display:block;padding-top:112px}.section,.products,.contact{display:block}}
+@media(max-width:620px){header{background:rgba(7,21,45,.96)}.hero{padding-top:98px}}

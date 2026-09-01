@@ -1,0 +1,3 @@
+/* Keep navigation visible without introducing a background panel. */
+header{background:transparent!important;backdrop-filter:none!important;border-bottom:0!important;mix-blend-mode:difference}
+header .nav-cta{border-color:currentColor}

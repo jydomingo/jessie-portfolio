@@ -1,0 +1,18 @@
+# Local review screenshots
+Screenshot *.png
+
+# Superseded resume copies
+Jessie_Domingo_Senior_Developer_Resume_v2.docx
+assets/Jessie_Domingo_Senior_Developer_Resume.docx
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+~$*.docx
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
