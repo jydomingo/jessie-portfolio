@@ -2,7 +2,7 @@
 
 [View the live portfolio](https://jessie-portfolio.jydomingo.workers.dev/) · [LinkedIn](https://www.linkedin.com/in/jessie-domingo/) · [GitHub Profile](https://github.com/jydomingo)
 
-A public, dependency-free portfolio highlighting 24+ years of enterprise application development, PowerBuilder expertise, .NET modernization, database engineering, solution architecture, IT leadership, and independent Nodeya products.
+A public, dependency-free portfolio highlighting 24+ years of enterprise application development, PowerBuilder expertise, .NET modernization, database engineering, solution architecture, IT leadership, and applied AI engineering across independent Nodeya products.
 
 ## Career highlights
 
@@ -16,11 +16,16 @@ A public, dependency-free portfolio highlighting 24+ years of enterprise applica
 ## Featured product case studies
 
 - [NexOne](NexOne/CASE_STUDY.md) — Modular, multi-tenant enterprise ERP
-- [NexAds](NexAds/CASE_STUDY.md) — Multi-tenant AI marketing and automation platform
-- [Nexora](Nexora/CASE_STUDY.md) — Multi-organization commerce and inventory application
-- [Nodeya Platform](Nodeya-Platform/CASE_STUDY.md) — Shared identity, audit, notification, subscription, storage, and API foundation
-- [NexGrid](NexGrid/CASE_STUDY.md) — Real-time, multi-site solar monitoring application
-- [Eljin Employee Portal](Eljin-Employee-Portal/CASE_STUDY.md) — Secured employee communication and digital workflow portal
+- [NexAgent](NexAgent/CASE_STUDY.md) — Governed AI agent orchestration with test-backed workflow and approval slices
+- [NexTrade](NexTrade/CASE_STUDY.md) — Multi-organization commerce and operations platform
+- [NexAds](NexAds/CASE_STUDY.md) — AI marketing product architecture and backend scope
+- [Nexora](Nexora/CASE_STUDY.md) — Corporate website, employee portal, and canonical organization directory
+- [Nodeya Platform](Nodeya-Platform/CASE_STUDY.md) — Shared identity, billing, audit, notification, storage, and API foundation
+- [NexGrid](NexGrid/CASE_STUDY.md) — Solar monitoring product; MQTT ingestion and site/device ownership verification remain open
+
+## Nodeya product portfolio
+
+Nodeya has three main products: NexOne, NexAds, and NexSuite. NexSuite core products are Nexora, NexTalent, NexTrade, NexDesk, NexSpace, NexCRM, and NexAgent. Other Nodeya products have separate or special-case boundaries, ownership, identity, integration, and release status. The repository readiness ledger distinguishes code, integration, verification, deployment, and customer availability. Product case studies describe selected implementation evidence and should not be read as a claim that every product is production-ready.
 
 ## Technical profile
 
@@ -28,14 +33,15 @@ A public, dependency-free portfolio highlighting 24+ years of enterprise applica
 
 **Database engineering:** SQL Server, Sybase ASE, Oracle, PostgreSQL, Entity Framework Core, and Dapper
 
-**Architecture and delivery:** Clean Architecture, Domain-Driven Design, CQRS, modular architecture, OIDC/JWT, Docker, Git, Azure DevOps, Agile, and Scrum
+**Applied AI engineering:** Agent versioning, provider-gateway routing, pre-call budget controls, tool-execution and approval workflows, OCR automation, and test-backed orchestration
+
+**Architecture and delivery:** Clean Architecture, Domain-Driven Design, CQRS, modular architecture, OIDC/JWT (Keycloak), YARP API gateway, SignalR, Docker, pnpm + Turborepo, Git, Azure DevOps, Agile, and Scrum
 
 ## Portfolio experience
 
 - Responsive static portfolio with no build dependencies
-- Section and product voice narration
-- Product progress indicators synchronized with actual MP3 duration
-- Keyboard-accessible product tabs and mobile navigation
+- Manually controlled product tabs with keyboard navigation
+- Keyboard-accessible mobile navigation
 - Reduced-motion support
 - Downloadable current resume
 - Public-safe product documentation and case studies
@@ -52,14 +58,15 @@ A public, dependency-free portfolio highlighting 24+ years of enterprise applica
 ├── script.js
 ├── audio/
 ├── NexOne/
+├── NexAgent/
+├── NexTrade/
 ├── NexAds/
 ├── Nexora/
 ├── Nodeya-Platform/
-├── NexGrid/
-└── Eljin-Employee-Portal/
+└── NexGrid/
 ```
 
-Each product folder contains a public overview and case study. Application source code and confidential operational material are intentionally excluded.
+Product folders contain public case studies. Application source code and confidential operational material are intentionally excluded.
 
 ## Local preview
 
@@ -78,9 +85,8 @@ Cloudflare Pages settings:
 
 ## Resume
 
-[Download the current Senior Software Engineer resume](Jessie_Domingo_Updated_Senior_Software_Engineer_Resume.docx)
+[Download the polished Senior Software Engineer resume (PDF)](Jessie_Domingo_Senior_Software_Engineer_Resume.pdf) · [Editable DOCX](Jessie_Domingo_Senior_Software_Engineer_Resume.docx)
 
 ## Public repository notice
 
 This repository is a professional portfolio and documentation showcase. It does not include private application source code, credentials, API keys, customer or employee data, database backups, internal infrastructure configuration, or employer-confidential material.
-

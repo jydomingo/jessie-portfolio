@@ -2,7 +2,7 @@
 
 ## Executive summary
 
-NexOne is the flagship product in the Nodeya portfolio: a modular, multi-tenant ERP designed to bring core enterprise operations into one coherent platform. The work focuses on establishing clear business boundaries, consistent tenant isolation, and a foundation that can grow by module without turning the system into a tightly coupled monolith.
+NexOne is an independently developed, multi-tenant ERP in the Nodeya portfolio. The readiness ledger describes 33 modules and treats NexOne as a standalone product with separate entry, identity, commercial, and finance flows.
 
 ## The challenge
 
@@ -21,9 +21,9 @@ Founder and Solution Architect responsible for:
 
 ## Solution approach
 
-NexOne organizes the ERP domain into modules covering accounting, finance, CRM, sales, purchasing, inventory, manufacturing, HR and payroll, projects, asset management, document management, reporting, workflow automation, tenant management, and integrations.
+NexOne organizes ERP workflows across accounting, finance, CRM, sales, purchasing, inventory, manufacturing, HR and payroll, projects, asset management, documents, reporting, workflow automation, and integrations.
 
-The solution uses API-driven boundaries and shared platform capabilities while keeping business rules within the appropriate domain modules. Multi-tenancy, authentication, authorization, auditability, and integration are treated as platform concerns rather than repeated independently by every module.
+The solution uses API-driven domain boundaries and keeps business rules within the appropriate modules. Platform capability extraction and production traffic cutover have separate reconciliation, rollback, and verification requirements; NexOne does not use Nexora's suite-provisioning path.
 
 ## Technology profile
 
@@ -42,5 +42,4 @@ The project establishes a documented enterprise ERP foundation spanning the majo
 
 ## Status and boundaries
 
-NexOne is an independently developed portfolio product. This public case study describes product scope and architectural direction; it does not claim a public production deployment or disclose private source code, credentials, customer data, or internal security configuration.
-
+The Nodeya readiness ledger dated 2026-11-05 calls NexOne a mature portfolio ERP while noting that extracted platform capabilities still have traffic-cutover and split-brain/reconciliation risks. This case study does not claim a public production deployment or disclose private source code, credentials, customer data, or internal security configuration.

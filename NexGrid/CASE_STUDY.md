@@ -2,7 +2,7 @@
 
 ## Executive summary
 
-NexGrid is a solar monitoring application designed to provide real-time and historical visibility into devices, energy activity, alerts, and performance across multiple sites.
+NexGrid is an independently developed solar-monitoring product with application screens and service boundaries for sites, devices, energy history, alerts, and reporting.
 
 ## The challenge
 
@@ -21,7 +21,7 @@ Solution Architect and Software Developer responsible for:
 
 ## Solution approach
 
-NexGrid combines real-time dashboards, device management, alerts, historical energy data, reporting, multi-site access, and role-based permissions. SignalR supports live application updates, while MQTT provides a foundation for device-oriented messaging and telemetry integration.
+The current product code includes device and site workflows, dashboards, historical data, alerts, reporting, and SignalR-based application updates. MQTT ingestion is provisioned in the architecture but is not yet wired end to end. Device ownership and canonical user-to-organization membership also require further verification before shared platform event routes can be enabled.
 
 The design separates device communication, application services, historical data, reporting, and user access concerns so each area can evolve without tightly coupling the entire solution.
 
@@ -30,15 +30,14 @@ The design separates device communication, application services, historical data
 - .NET application services
 - React-based user interface direction
 - SignalR for real-time updates
-- MQTT for device messaging
+- MQTT integration foundation (end-to-end ingestion remains open)
 - Historical data and reporting
 - Multi-site, role-based access
 
 ## Portfolio outcome
 
-The project demonstrates real-time application architecture, device integration, operational dashboards, historical reporting, and access control for a multi-site monitoring scenario.
+The project demonstrates product architecture and interface work for a multi-site monitoring scenario, including a clear separation between product-owned telemetry and shared platform capabilities.
 
 ## Status and boundaries
 
-This public case study documents the product’s functional and architectural scope. It excludes source code, device credentials, private telemetry, customer information, infrastructure configuration, and operational security details.
-
+The Nodeya readiness review dated 2026-11-05 records MQTT ingestion and canonical site/device ownership verification as open work. This case study does not claim a production telemetry pipeline or customer deployment. It excludes source code, device credentials, private telemetry, customer information, infrastructure configuration, and operational security details.
