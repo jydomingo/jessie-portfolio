@@ -15,13 +15,15 @@ A public, dependency-free portfolio highlighting 24+ years of enterprise applica
 
 ## Featured product case studies
 
-- [NexOne](NexOne/CASE_STUDY.md) — Modular, multi-tenant enterprise ERP
-- [NexAgent](NexAgent/CASE_STUDY.md) — Governed AI agent orchestration with test-backed workflow and approval slices
+- [Nexora](Nexora/CASE_STUDY.md) — Organization directory and employee portal
+- [NexTalent](NexTalent/CASE_STUDY.md) — HR and workforce system of record
 - [NexTrade](NexTrade/CASE_STUDY.md) — Multi-organization commerce and operations platform
-- [NexAds](NexAds/CASE_STUDY.md) — AI marketing product architecture and backend scope
-- [Nexora](Nexora/CASE_STUDY.md) — Corporate website, employee portal, and canonical organization directory
-- [Nodeya Platform](Nodeya-Platform/CASE_STUDY.md) — Shared identity, billing, audit, notification, storage, and API foundation
-- [NexGrid](NexGrid/CASE_STUDY.md) — Solar monitoring product; MQTT ingestion and site/device ownership verification remain open
+- [NexDesk](NexDesk/CASE_STUDY.md) — IT service management and support operations
+- [NexCRM](NexCRM/CASE_STUDY.md) — Organization-scoped CRM foundation
+- [NexSpace](NexSpace/CASE_STUDY.md) — Work, projects, and collaboration
+- [NexAgent](NexAgent/CASE_STUDY.md) — Governed AI agent orchestration with test-backed workflow and approval slices
+
+Other Nodeya product case studies: [NexOne](NexOne/CASE_STUDY.md), [NexAds](NexAds/CASE_STUDY.md), [Nodeya Platform](Nodeya-Platform/CASE_STUDY.md), and [NexGrid](NexGrid/CASE_STUDY.md).
 
 ## Nodeya product portfolio
 
