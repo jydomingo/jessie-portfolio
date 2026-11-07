@@ -1,43 +1,46 @@
-# Case Study: Nexora Commerce and Inventory
+# Case Study: Nexora Corporate Portal and Organization Directory
 
 ## Executive summary
 
-Nexora is a multi-organization commerce and inventory application focused on traceable stock movement, controlled access, and operational visibility across purchasing, receiving, sales issuance, transfers, stock counts, returns, and reporting.
+Nexora is the corporate website and secured employee portal of the Nodeya ecosystem, doubling as the canonical tenant, organization, and identity directory that downstream products consume.
 
 ## The challenge
 
-Multi-branch and multi-organization operations need more than a current stock quantity. Teams must understand where inventory came from, where it moved, who performed an action, which organization owns it, and how transactions affect availability. Weak traceability leads to reconciliation problems and unreliable reporting.
+Growing product suites need one dependable answer to "who is this person and which organization do they belong to?" When every product keeps its own organization and user records, access drifts, employee communication scatters across tools, and integration logic multiplies. Corporate groups also need a single place for announcements, forms, learning, and support.
 
 ## My role
 
 Solution Architect and Software Developer responsible for:
 
-- Commerce and inventory domain design
-- Organization-aware access model
-- Inventory ledger and movement workflow direction
-- Purchasing, sales, transfer, and stock-count scope
-- Reporting, audit, and forecasting foundations
-- API and database architecture
+- Portal and employee-experience scope
+- Canonical tenant and organization directory design
+- Identity and single sign-on direction
+- Digital forms, approvals, and content workflow
+- Scoped shared-service integration strategy
+- Audit and notification architecture
 
 ## Solution approach
 
-The application centers inventory activity on traceable ledger operations. Product catalog, purchasing, receiving, sales issuance, returns, reservations, transfers, and stock counts operate within organization-scoped permissions. Reporting and audit capabilities provide evidence for operational review, while forecasting foundations prepare the product for future planning capabilities.
+The portal centralizes employee communication and daily workflows: announcements, digital forms and approvals, handbook and knowledge base, learning and certification, events, support tickets, and guided navigation.
+
+Behind the portal, Nexora maintains the canonical directory of tenants, organizations, and user identities. Products treat Nexora as the source of truth for organization context instead of maintaining their own divergent copies.
+
+Nexora integrates with shared platform services — audit, notifications, and file storage — through organization-scoped adapters. Delivery uses durable outbox records written in the same database save as the source event, short-lived HMAC-signed service tokens scoped to the exact tenant and organization, and idempotency keys so retries never duplicate records. Single sign-on is backed by Keycloak.
 
 ## Technology profile
 
-- .NET and REST APIs
 - React and TypeScript
+- .NET and REST APIs
+- Keycloak OIDC
 - PostgreSQL
-- OIDC-based identity
-- Role-based access control
-- Multi-organization architecture
-- Audit and reporting foundations
+- Organization-scoped platform adapters
+- HMAC-signed service tokens
+- Durable outbox delivery
 
 ## Portfolio outcome
 
-Nexora demonstrates the translation of real operational workflows into a structured commerce and inventory domain. The design emphasizes data integrity, traceability, scoped access, and a maintainable foundation for reporting and future forecasting.
+Nexora demonstrates ecosystem-level identity and organization architecture: one portal for employee life, one directory for organizational truth, and disciplined, scoped integration with shared platform services.
 
 ## Status and boundaries
 
-This is an independently developed enterprise application. The public case study documents its functional and architectural scope without publishing source code, business data, credentials, or internal deployment details.
-
+This is an independently developed Nodeya product. The public case study documents its functional and architectural scope without publishing source code, business data, credentials, or internal deployment details.
